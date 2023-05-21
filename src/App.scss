@@ -24,22 +24,24 @@ body {
   margin: 0;
 }
 
-#root {
-
-}
-
 .dark-mode {
   // Define dark variables:
   --color-backgroud--dark: #41436A;
   --color-text: rgba(255, 255, 255, 0.87);
 }
 
-a {
+.page {
+  max-width: 768px;
+}
+
+a,
+button {
   color: var(--color-link);
   transition: color 0.15s ease-in-out;
 }
 
-a:hover {
+a:hover,
+button:hover {
   color: var(--color-link--hover);
 }
 
@@ -57,7 +59,7 @@ h1 {
   line-height: 1.3333;
   text-align: center;
   max-width: 42.5rem;
-  margin: .5em 0;
+  margin: .5em auto;
 }
 
 .center-action {

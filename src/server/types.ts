@@ -1,9 +1,10 @@
 /**
  * The data structure for a question option.
  */
-interface QuestionOption {
+export interface MultipleChoiceOption {
+  id: string,
   title: string;
-  value: number;
+  score: number;
 }
 
 /**
@@ -12,5 +13,6 @@ interface QuestionOption {
 export interface Question {
   id: number;
   question: string;
-  options: QuestionOption[];
+  options: MultipleChoiceOption[];
+  lastQuestion?: boolean;
 }
