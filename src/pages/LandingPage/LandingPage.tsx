@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useGetQuestionsQuery } from "../../redux/api.ts";
+import { Link } from 'react-router-dom';
+import { useGetQuestionsQuery } from '../../redux/api.ts';
 
 export default function LandingPage() {
   const { isSuccess, isLoading } = useGetQuestionsQuery(undefined);
@@ -9,7 +9,7 @@ export default function LandingPage() {
       <h1>Are your personality traits "Introvert" or "Extrovert"?</h1>
       <div className="center-action">
         {isLoading && (
-          <div>Loading quiz...</div>
+          <div className="action">Loading quiz...</div>
         )}
         {!isLoading && isSuccess && (
           <Link to="/quiz" className="action">Take the quiz</Link>
