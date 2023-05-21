@@ -11,6 +11,7 @@
   --color-border--active: #294c8de6;
 
   --content-max-width: 1280px;
+  --content-max-width--small: 768px;
   --default-transition: .15s ease-in-out;
 
   --color-button-background: #EA8217;
@@ -43,7 +44,7 @@ body {
 }
 
 .page {
-  max-width: 768px;
+  max-width: var(--content-max-width--small);
 }
 
 a {
@@ -82,4 +83,8 @@ h1 {
     font-weight: 700;
     text-decoration: none;
   }
+}
+
+hr {
+  margin-bottom: 1.5rem;
 }

@@ -7,6 +7,7 @@ export default function LandingPage() {
   return (
     <article className="page">
       <h1>Are your personality traits "Introvert" or "Extrovert"?</h1>
+      <hr/>
       <div className="center-action">
         {isLoading && (
           <div className="action">Loading quiz...</div>
