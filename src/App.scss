@@ -1,0 +1,73 @@
+:root {
+  --color-backgroud: #fdfdfd;
+  --color-header-background: #F8D49B;
+  --color-text: rgba(50, 62, 87, 0.95);
+  --color-link: #5193B3;
+  --color-link--hover: #62C4C3;
+  --content-max-width: 1280px;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-backgroud);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Reset body default styles.
+body {
+  margin: 0;
+}
+
+#root {
+
+}
+
+.dark-mode {
+  // Define dark variables:
+  --color-backgroud--dark: #41436A;
+  --color-text: rgba(255, 255, 255, 0.87);
+}
+
+a {
+  color: var(--color-link);
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-link--hover);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.3333;
+  text-align: center;
+  max-width: 42.5rem;
+  margin: .5em 0;
+}
+
+.center-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .action {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
