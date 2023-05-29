@@ -1,3 +1,5 @@
+import { PersonalityTrait } from "./mock-data.ts";
+
 /**
  * The data structure for a question option.
  */
@@ -15,4 +17,26 @@ export interface Question {
   question: string;
   options: MultipleChoiceOption[];
   lastQuestion?: boolean;
+}
+
+export interface Quiz {
+  id: number;
+  minScore: number;
+  maxScore: number;
+  questions: Question[];
+}
+
+/**
+ * The test data used to calculate the result.
+ */
+export interface TestSubmissionRequestArg {
+  score: number;
+}
+
+/**
+ * The validated test result.
+ */
+export interface TestResultResponse {
+  score: number;
+  trait: PersonalityTrait;
 }

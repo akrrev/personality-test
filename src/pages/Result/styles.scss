@@ -1,0 +1,20 @@
+.result-content {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.loading {
+  color: var(--color-disabled);
+}
+
+.result {
+  color: var(--color-secondary);
+}
+
+.error-wrapper {
+  // We don't want the error to pop too much in size.
+  font-size: 1.5rem;
+  max-width: var(--content-min-width);
+  margin-bottom: 1.25rem;
+}

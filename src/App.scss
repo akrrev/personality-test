@@ -1,5 +1,6 @@
 :root {
   --color-primary: #294C8D;
+  --color-secondary: #EA8217;
   --color-accent: #EAEEFDF2;
   --color-canvas: #fdfdfd;
   --color-header-background: var(--color-primary);
@@ -9,12 +10,14 @@
   --color-link--hover: #F89344;
   --color-border: #294c8d4d;
   --color-border--active: #294c8de6;
+  --color-disabled: #6C6D70;
 
   --content-max-width: 1280px;
   --content-max-width--small: 768px;
+  --content-min-width: 480px;
   --default-transition: .15s ease-in-out;
 
-  --color-button-background: #EA8217;
+  --color-button-background: var(--color-secondary);
   --color-button-background--hover: #b97f3f;
   --color-button-background--disabled: #C9CBCB;
   --color-button-background--secondary: #F4F4F4;
@@ -44,6 +47,7 @@ body {
 }
 
 .page {
+  min-width: min(var(--content-min-width), 80vw);
   max-width: var(--content-max-width--small);
 }
 
