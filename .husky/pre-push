@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+printf "\n\n###################################"
+printf "\n🛠️ Checking code – Please wait  ⏳ "
+printf "\n###################################\n"
+tsc -p tsconfig.json --noEmit
+printf "✅  Finished Checking code - Pushing "
+printf "\n###################################\n\n"

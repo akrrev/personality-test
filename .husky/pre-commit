@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+printf "\n\n#####################"
+printf "\n🛠️ Running linter..."
+printf "\n#####################\n"
+yarn run lint
