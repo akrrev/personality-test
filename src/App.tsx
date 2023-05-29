@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import Header from './components/Header/Header.tsx';
 import LandingPage from './pages/LandingPage/LandingPage.tsx';
 import Quiz from './pages/Quiz/Quiz.tsx';
+import Result from './pages/Result/Result.tsx';
 import { store } from './redux/store.ts';
 import './App.scss';
 
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/quiz' element={<Quiz />} />
+            <Route path='/result' element={<Result />} />
           </Routes>
         </main>
       </BrowserRouter>
