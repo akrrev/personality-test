@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useGetQuestionsQuery } from '../../redux/api.ts';
-import Question from '../../components/Question/Question.tsx';
+import Question from 'components/Question/Question.tsx';
+import { useGetQuestionsQuery } from 'redux/api.ts';
 import './styles.scss';
 
 export default function Quiz() {
-  const { data } = useGetQuestionsQuery(undefined);
+  const { data } = useGetQuestionsQuery();
   const [activeQuestion, setActiveQuestion] = useState<number>(1);
   const [score, setScore] = useState(0);
 

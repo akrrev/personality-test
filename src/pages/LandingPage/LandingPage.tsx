@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useGetQuestionsQuery } from '../../redux/api.ts';
+import { useGetQuestionsQuery } from 'redux/api.ts';
 
 export default function LandingPage() {
   const { isSuccess, isLoading } = useGetQuestionsQuery();

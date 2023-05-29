@@ -1,4 +1,4 @@
-import { PersonalityTrait } from "./mock-data.ts";
+import { PersonalityTrait } from 'server/mock-data.ts';
 
 /**
  * The data structure for a question option.

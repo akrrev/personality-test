@@ -1,7 +1,7 @@
 import { createServer, Response } from 'miragejs'
-import { Question } from './types.ts';
-import { quiz } from './mock-data.ts';
-import { calculatePeronsalityTrait } from './validator.ts';
+import { Question } from 'server/types.ts';
+import { quiz } from 'server/mock-data.ts';
+import { calculatePeronsalityTrait } from 'server/validator.ts';
 
 export function makeServer() {
   return createServer({

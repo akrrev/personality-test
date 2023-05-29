@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from 'react-router-dom';
-import { useGetTestResultQuery } from '../../redux/api.ts';
+import { useGetTestResultQuery } from 'redux/api.ts';
 import './styles.scss';
 
 export default function Result() {

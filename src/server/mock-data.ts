@@ -1,4 +1,4 @@
-import { Quiz } from './types.ts';
+import { Quiz } from 'server/types.ts';
 
 /**
  * The mocked personality test questions.

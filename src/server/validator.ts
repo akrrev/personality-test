@@ -1,4 +1,4 @@
-import { PersonalityTrait } from "./mock-data.ts";
+import { PersonalityTrait } from 'server/mock-data.ts';
 
 /**
  * Calculates the personality trait for a given set of test data.

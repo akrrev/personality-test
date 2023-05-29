@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MultipleChoiceOption, Question } from '../../server/types.ts';
+import { MultipleChoiceOption, Question } from 'server/types.ts';
 import './styles.scss';
 
 type QuestionItem = Question & {
