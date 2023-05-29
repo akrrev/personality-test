@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Quiz component correctly 1`] = `
+<article
+  className="page"
+>
+  <h1
+    className="heading-2"
+  >
+    Answer the questions 
+    <span
+      className="question-count"
+    >
+      (
+      1
+      /
+      2
+      )
+    </span>
+  </h1>
+  <section
+    className=" question"
+  >
+    <hr />
+    <h2
+      className="question-title"
+    >
+      First question
+    </h2>
+    <hr />
+    <button
+      className=" question-option"
+      onClick={[Function]}
+    >
+      1
+       – 
+      First option
+    </button>
+    <button
+      className=" question-option"
+      onClick={[Function]}
+    >
+      2
+       – 
+      Second option
+    </button>
+    <div
+      className="center-action"
+    >
+      <button
+        className="question-submit"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Submit answer
+      </button>
+    </div>
+  </section>
+  <section
+    className="hidden question"
+  >
+    <hr />
+    <h2
+      className="question-title"
+    >
+      Second question
+    </h2>
+    <hr />
+    <div
+      className="center-action"
+    >
+      <button
+        className="question-submit"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Submit answer
+      </button>
+    </div>
+  </section>
+</article>
+`;
