@@ -35,7 +35,7 @@ export default function Question({
       <div className="center-action">
         <button
           disabled={!selectedOption}
-          onClick={() => onAnswer(id + 1, selectedOption?.score || 0)}
+          onClick={() => onAnswer(id, selectedOption?.score || 0)}
           className="question-submit"
         >
           Submit answer

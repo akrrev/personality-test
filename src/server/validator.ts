@@ -1,4 +1,4 @@
-import { PersonalityTrait } from 'server/mock-data.ts';
+import { PersonalityTrait } from 'server/types.ts';
 
 /**
  * Calculates the personality trait for a given set of test data.
@@ -7,7 +7,7 @@ import { PersonalityTrait } from 'server/mock-data.ts';
  * @param {number} maxScore - The maximum score for the current test.
  * @returns {PersonalityTrait | null} The result of the test data or null.
  */
-export const calculatePeronsalityTrait = (
+export const calculatePersonalityTrait = (
   score: number,
   minScore: number,
   maxScore: number

@@ -1,5 +1,3 @@
-import { PersonalityTrait } from 'server/mock-data.ts';
-
 /**
  * The data structure for a question option.
  */
@@ -39,4 +37,13 @@ export interface TestSubmissionRequestArg {
 export interface TestResultResponse {
   score: number;
   trait: PersonalityTrait;
+}
+
+/**
+ * The personality traits assessed in this test.
+ */
+export enum PersonalityTrait {
+  Introvert = 'Introvert',
+  Both = 'A bit of both 😉',
+  Extrovert = 'Extrovert',
 }

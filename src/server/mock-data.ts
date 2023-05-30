@@ -140,12 +140,3 @@ export const quiz: Quiz = {
     }
   ],
 }
-
-/**
- * The personality traits assessed in this test.
- */
-export enum PersonalityTrait {
-  Introvert = 'Introvert',
-  Both = 'A bit of both 😉',
-  Extrovert = 'Extrovert',
-}

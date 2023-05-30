@@ -40,12 +40,6 @@ body {
   margin: 0;
 }
 
-.dark-mode {
-  // Define dark variables:
-  --color-backgroud--dark: #41436A;
-  --color-text: rgba(255, 255, 255, 0.87);
-}
-
 .page {
   min-width: min(var(--content-min-width), 80vw);
   max-width: var(--content-max-width--small);

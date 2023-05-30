@@ -1,7 +1,7 @@
 import { createServer, Response } from 'miragejs'
 import { Question } from 'server/types.ts';
 import { quiz } from 'server/mock-data.ts';
-import { calculatePeronsalityTrait } from 'server/validator.ts';
+import { calculatePersonalityTrait } from 'server/validator.ts';
 
 export function makeServer() {
   return createServer({
@@ -23,7 +23,7 @@ export function makeServer() {
           return new Response(400, {}, { errors: ['Score is required'] });
         }
 
-        const result = calculatePeronsalityTrait(Number(queryParams.score), quiz.minScore, quiz.maxScore);
+        const result = calculatePersonalityTrait(Number(queryParams.score), quiz.minScore, quiz.maxScore);
         if (!result) {
           return new Response(400, {}, { errors: ['Provided data was not valid'] });
         }

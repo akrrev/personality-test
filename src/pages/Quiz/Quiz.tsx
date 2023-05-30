@@ -12,7 +12,7 @@ export default function Quiz() {
   // Updates the total score and shows the next question.
   const submitAnswer = (id: number, questionScore: number) => {
     setScore(score + questionScore);
-    setActiveQuestion(id);
+    setActiveQuestion(id + 1);
   }
 
   const quizCompleted = data && data.length < activeQuestion;
